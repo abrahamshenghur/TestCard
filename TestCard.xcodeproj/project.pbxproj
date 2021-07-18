@@ -13,6 +13,12 @@
 		5299FF5E269FF2DC00B8DA6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5299FF5D269FF2DC00B8DA6E /* Assets.xcassets */; };
 		5299FF61269FF2DC00B8DA6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5299FF5F269FF2DC00B8DA6E /* LaunchScreen.storyboard */; };
 		5299FF69269FF77700B8DA6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5299FF68269FF77700B8DA6E /* Main.storyboard */; };
+		5299FFD026A3788500B8DA6E /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5299FFCF26A3788500B8DA6E /* RatingView.swift */; };
+		5299FFD226A378DD00B8DA6E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5299FFD126A378DD00B8DA6E /* Extensions.swift */; };
+		5299FFD426A3793500B8DA6E /* CardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5299FFD326A3793500B8DA6E /* CardLayout.swift */; };
+		5299FFD626A379AF00B8DA6E /* CardTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5299FFD526A379AF00B8DA6E /* CardTitleView.swift */; };
+		5299FFD826A379FE00B8DA6E /* CardSliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5299FFD726A379FE00B8DA6E /* CardSliderCell.swift */; };
+		5299FFDA26A37A9C00B8DA6E /* CardSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5299FFD926A37A9C00B8DA6E /* CardSliderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		5299FF60269FF2DC00B8DA6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5299FF62269FF2DC00B8DA6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5299FF68269FF77700B8DA6E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5299FFCF26A3788500B8DA6E /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		5299FFD126A378DD00B8DA6E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5299FFD326A3793500B8DA6E /* CardLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLayout.swift; sourceTree = "<group>"; };
+		5299FFD526A379AF00B8DA6E /* CardTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTitleView.swift; sourceTree = "<group>"; };
+		5299FFD726A379FE00B8DA6E /* CardSliderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSliderCell.swift; sourceTree = "<group>"; };
+		5299FFD926A37A9C00B8DA6E /* CardSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSliderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,45 @@
 		5299FF55269FF2DA00B8DA6E /* TestCard */ = {
 			isa = PBXGroup;
 			children = (
-				5299FF56269FF2DA00B8DA6E /* AppDelegate.swift */,
-				5299FF58269FF2DA00B8DA6E /* ViewController.swift */,
+				5299FFD126A378DD00B8DA6E /* Extensions.swift */,
+				5299FFDD26A37DE100B8DA6E /* Screens */,
+				5299FFDC26A37DC000B8DA6E /* CollectionView */,
+				5299FFDB26A37DB200B8DA6E /* Custom Views */,
 				5299FF5A269FF2DA00B8DA6E /* Main.storyboard */,
 				5299FF5D269FF2DC00B8DA6E /* Assets.xcassets */,
 				5299FF5F269FF2DC00B8DA6E /* LaunchScreen.storyboard */,
 				5299FF68269FF77700B8DA6E /* Main.storyboard */,
 				5299FF62269FF2DC00B8DA6E /* Info.plist */,
+				5299FF56269FF2DA00B8DA6E /* AppDelegate.swift */,
 			);
 			path = TestCard;
+			sourceTree = "<group>";
+		};
+		5299FFDB26A37DB200B8DA6E /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				5299FFD526A379AF00B8DA6E /* CardTitleView.swift */,
+				5299FFCF26A3788500B8DA6E /* RatingView.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		5299FFDC26A37DC000B8DA6E /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				5299FFD926A37A9C00B8DA6E /* CardSliderViewController.swift */,
+				5299FFD726A379FE00B8DA6E /* CardSliderCell.swift */,
+				5299FFD326A3793500B8DA6E /* CardLayout.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		5299FFDD26A37DE100B8DA6E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5299FF58269FF2DA00B8DA6E /* ViewController.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +181,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5299FFD426A3793500B8DA6E /* CardLayout.swift in Sources */,
+				5299FFD626A379AF00B8DA6E /* CardTitleView.swift in Sources */,
+				5299FFD026A3788500B8DA6E /* RatingView.swift in Sources */,
+				5299FFD826A379FE00B8DA6E /* CardSliderCell.swift in Sources */,
 				5299FF59269FF2DA00B8DA6E /* ViewController.swift in Sources */,
+				5299FFDA26A37A9C00B8DA6E /* CardSliderViewController.swift in Sources */,
 				5299FF57269FF2DA00B8DA6E /* AppDelegate.swift in Sources */,
+				5299FFD226A378DD00B8DA6E /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,8 +334,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2KYHXD8LY9;
+				DEVELOPMENT_TEAM = 6QT8WRZWB2;
 				INFOPLIST_FILE = TestCard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -295,6 +344,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.asapps.ashenghur.TestCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,8 +354,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2KYHXD8LY9;
+				DEVELOPMENT_TEAM = 6QT8WRZWB2;
 				INFOPLIST_FILE = TestCard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -313,6 +364,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.asapps.ashenghur.TestCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
